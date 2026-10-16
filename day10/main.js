@@ -19,3 +19,15 @@ score = 100; // 할당 : 값을 넣는다.
 console.log(score); // 100
 
 let level = 1; // 초기화 : 선언과 동시에 할당
+
+// 실습01
+let city = "서울";
+city = "부산";
+console.log("도시 :", city);
+
+// const : 다시 담을 수 없다. (상수)
+const birthYear = 1998;
+console.log("태어난 해 :", birthYear);
+
+// birthYear = 2000; // 재할당 불가
+// let city = "대구";  // 재선언 불가
