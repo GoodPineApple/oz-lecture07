@@ -36,3 +36,19 @@ let a = "안녕하세요.\n오늘은 날씨가 좋네요.\n배도 부르고요."
 let b = `안녕하세요.
 오늘은 날씨가 좋네요.
 배도 부르고요.`;
+
+// boolean type
+let isMember = true;
+let hasCoupon = false;
+console.log(typeof isMember); // boolean
+console.log("회원인가요?", isMember);
+console.log("쿠폰이 있나요?", hasCoupon);
+
+console.log(10 < 20); // true
+console.log(10 > 20); // false
+
+const userScore = 80;
+const passScore = 60;
+let isPass = userScore > passScore; // let isPass = 80 > 60;
+
+console.log("합격했나요?", isPass);
