@@ -49,3 +49,6 @@ console.log(!hasTicket); // false, 뒤집기
 // 괄호로 묶는 범위에 따라 결과가 다름
 console.log(!true && false); // false,
 console.log(!(true && false)); // true,
+
+console.log(!age > 20, hasTicket);
+console.log("age : ", age);
