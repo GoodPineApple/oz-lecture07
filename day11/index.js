@@ -60,3 +60,12 @@ if (numIf % 2 === 0) {
 } else {
   console.log("홀수입니다.");
 }
+
+const numIf2 = 0;
+if (numIf2 > 0) {
+  console.log("양수입니다.");
+} else if (numIf2 < 0) {
+  console.log("음수입니다.");
+} else {
+  console.log("0입니다.");
+}
