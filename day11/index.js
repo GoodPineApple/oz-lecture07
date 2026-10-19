@@ -29,3 +29,11 @@ console.log(total); // 15000
 let message = "안녕";
 message += "하세요";
 console.log(message); // 안녕하세요
+
+// 비교연산자
+console.log(10 == "10"); // true, 값만 비교
+console.log(10 === "10"); // false, 값과 타입 모두 비교
+console.log(0 == ""); // true, 값만 비교
+console.log(0 === ""); // false, 값과 타입 모두 비교
+console.log(null == undefined); // true, 값만 비교
+console.log(null === undefined); // false, 값과 타입 모두 비교
