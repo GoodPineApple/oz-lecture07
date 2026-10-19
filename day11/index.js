@@ -57,4 +57,6 @@ console.log("age : ", age);
 const numIf = 5; // => 4로 바꿔보세요
 if (numIf % 2 === 0) {
   console.log("짝수입니다.");
+} else {
+  console.log("홀수입니다.");
 }
