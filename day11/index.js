@@ -86,7 +86,9 @@ const role = "admin";
 if (isLoggedIn) {
   console.log("로그인 O");
   if (role === "admin") {
-    console.log("관리자 페이지로 이동");
+    console.log("관리자 메뉴");
+  } else {
+    console.log("내 정보");
   }
 } else {
   console.log("로그인 하기");
