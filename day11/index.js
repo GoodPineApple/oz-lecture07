@@ -79,3 +79,15 @@ const day = "토";
 if (day === "토" || day === "일") {
   console.log("주말입니다.");
 }
+
+// 중첩 if문
+const isLoggedIn = true;
+const role = "admin";
+if (isLoggedIn) {
+  console.log("로그인 O");
+  if (role === "admin") {
+    console.log("관리자 페이지로 이동");
+  }
+} else {
+  console.log("로그인 하기");
+}
