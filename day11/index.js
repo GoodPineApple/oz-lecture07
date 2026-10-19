@@ -93,3 +93,16 @@ if (isLoggedIn) {
 } else {
   console.log("로그인 하기");
 }
+
+// switch문
+const food = "사과"; // => "당근", "책상"으로 바꿔보세요
+switch (food) {
+  case "사과":
+    console.log("과일");
+    break;
+  case "당근":
+    console.log("채소");
+    break;
+  default:
+    console.log("과일도 채소도 아닙니다.");
+}
