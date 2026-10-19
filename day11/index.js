@@ -37,3 +37,15 @@ console.log(0 == ""); // true, 값만 비교
 console.log(0 === ""); // false, 값과 타입 모두 비교
 console.log(null == undefined); // true, 값만 비교
 console.log(null === undefined); // false, 값과 타입 모두 비교
+
+// 논리연산자
+const age = 25;
+const hasTicket = true;
+
+console.log(age >= 20 && hasTicket); // true, 두 조건 모두 true
+console.log(age < 20 || hasTicket); // true, 두 조건 중 하나만 true
+console.log(!hasTicket); // false, 뒤집기
+
+// 괄호로 묶는 범위에 따라 결과가 다름
+console.log(!true && false); // false,
+console.log(!(true && false)); // true,
