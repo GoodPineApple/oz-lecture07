@@ -124,3 +124,15 @@ console.log(result);
 // 삼항연산자로 표현하면
 result = scoreThird >= 60 ? "합격" : "불합격";
 console.log(result);
+
+// if의 괄호 생략
+if (scoreThird >= 90) console.log("A학점입니다.");
+
+if (scoreThird >= 90) {
+  console.log("A학점입니다.");
+  console.log("축하합니다.");
+}
+
+// if의 괄호 생략 시, 한 줄만 실행됨
+if (scoreThird >= 90) console.log("A학점입니다.");
+console.log("축하합니다.");
