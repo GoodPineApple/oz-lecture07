@@ -108,3 +108,19 @@ switch (food) {
   default:
     console.log("과일도 채소도 아닙니다.");
 }
+
+// 삼항연산자
+let result;
+let scoreThird = 55; // => 75로 바꿔보세요
+
+// if로 표현하면
+if (scoreThird >= 60) {
+  result = "합격";
+} else {
+  result = "불합격";
+}
+console.log(result);
+
+// 삼항연산자로 표현하면
+result = scoreThird >= 60 ? "합격" : "불합격";
+console.log(result);
