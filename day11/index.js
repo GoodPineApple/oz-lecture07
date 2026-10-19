@@ -97,6 +97,8 @@ if (isLoggedIn) {
 // switch문
 const food = "사과"; // => "당근", "책상"으로 바꿔보세요
 switch (food) {
+  case "바나나":
+  case "멜론":
   case "사과":
     console.log("과일");
     break;
