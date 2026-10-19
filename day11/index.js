@@ -69,3 +69,13 @@ if (numIf2 > 0) {
 } else {
   console.log("0입니다.");
 }
+
+const score = 95;
+if (score >= 90 && score <= 100) {
+  console.log("A학점입니다.");
+}
+
+const day = "토";
+if (day === "토" || day === "일") {
+  console.log("주말입니다.");
+}
