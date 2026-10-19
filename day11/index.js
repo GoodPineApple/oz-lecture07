@@ -52,3 +52,9 @@ console.log(!(true && false)); // true,
 
 console.log(!age > 20, hasTicket);
 console.log("age : ", age);
+
+// 조건문
+const numIf = 5; // => 4로 바꿔보세요
+if (numIf % 2 === 0) {
+  console.log("짝수입니다.");
+}
