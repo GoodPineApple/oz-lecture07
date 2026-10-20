@@ -23,11 +23,11 @@ for (let i = 1; i <= 9; i++) {
 }
 
 // 중첩 for 반복문
-for (let i = 0; i < 2; i++) {
+for (let i = 1; i < 2; i++) {
   // => i 초기화를 0으로 바꾸기
   console.log("i 블록 시작");
   console.log("i", i);
-  for (let k = 0; k < 10; k++) {
+  for (let k = 1; k < 10; k++) {
     // => k 초기화를 0으로 바꾸기
     console.log("k 블록 시작");
     console.log("k", k);
