@@ -75,7 +75,7 @@ function gugudan(dan) {
 gugudan(9); // 2~9 숫자 바꿔보기
 
 // 매개변수 여러개 및 기본값
-function intoduce(name, age) {
+function intoduce(name, age = "나이불명") {
   console.log(`안녕하세요. ${name} (${age})`);
 }
 intoduce("홍길동", 20);
