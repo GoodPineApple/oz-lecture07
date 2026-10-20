@@ -72,3 +72,4 @@ function gugudan(dan) {
     console.log(`${dan} x ${i} = ${dan * i}`);
   }
 }
+gugudan(9);
