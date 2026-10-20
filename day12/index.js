@@ -12,3 +12,12 @@ for (let i = 1; i <= 10; i++) {
   total += i;
 }
 console.log(total);
+
+// 구구단 3단 만들기
+for (let i = 1; i <= 9; i++) {
+  let dan = 3;
+  let result = dan * i;
+  let message = `${dan} x ${i} = ${result}`;
+  console.log(message);
+  //   console.log(`3 x ${i} = ${3 * i}`);
+}
