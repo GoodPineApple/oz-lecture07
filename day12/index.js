@@ -23,11 +23,11 @@ for (let i = 1; i <= 9; i++) {
 }
 
 // 중첩 for 반복문
-for (let i = 1; i < 2; i++) {
+for (let i = 0; i < 2; i++) {
   // => i 초기화를 0으로 바꾸기
   console.log("i 블록 시작");
   console.log("i", i);
-  for (let k = 1; k < 2; k++) {
+  for (let k = 0; k < 10; k++) {
     // => k 초기화를 0으로 바꾸기
     console.log("k 블록 시작");
     console.log("k", k);
@@ -41,3 +41,12 @@ const fruits = ["사과", "바나나", "포도", "딸기"];
 for (let i = 0; i < fruits.length; i++) {
   console.log(fruits[i]);
 }
+
+// while 반복문
+let money = 10000;
+let cups = 0;
+while (money >= 3000) {
+  money -= 3000;
+  cups++;
+}
+console.log(`남은 돈: ${money}원, 구매한 컵 수: ${cups}개`);
