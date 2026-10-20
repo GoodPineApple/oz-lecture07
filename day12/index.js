@@ -81,3 +81,14 @@ function intoduce(name, age = "나이불명") {
 intoduce("홍길동", 20);
 intoduce("홍길동");
 intoduce("홍길동", 20, "서울시"); // age 이후 매개변수는 무시됨
+
+// return 반환값
+function sum(a, b) {
+  let result = a + b;
+  return result; // 부른 곳으로 반환
+}
+
+let answer = sum(10, 20); // 돌려받은 30을 담음
+console.log(answer);
+
+console.log(result);
