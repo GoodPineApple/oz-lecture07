@@ -91,4 +91,14 @@ function sum(a, b) {
 let answer = sum(10, 20); // 돌려받은 30을 담음
 console.log(answer);
 
-console.log(result);
+// console.log(result); // 스코프 차이로 레퍼런스 오류 발생
+
+// return을 만나면 함수는 종료됨
+function sumEarlyReturn(num1, num2) {
+  if (typeof num1 !== "number" || typeof num2 !== "number") {
+    return;
+  }
+  return num1 + num2;
+}
+const answer2 = sumEarlyReturn(10, 20); // 인수를 문자열 "10"으로 변경
+console.log("answer2", answer2);
