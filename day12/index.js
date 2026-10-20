@@ -53,15 +53,15 @@ console.log(`남은 돈: ${money}원, 구매한 컵 수: ${cups}개`);
 
 // break와 continue
 for (let i = 1; i < 10; i++) {
-  console.log(i);
   if (i === 5) {
     break;
   }
+  console.log(i);
 }
 
 for (let i = 1; i < 10; i++) {
-  console.log(i);
   if (i === 5) {
     continue;
   }
+  console.log(i);
 }
