@@ -65,3 +65,10 @@ for (let i = 1; i < 10; i++) {
   }
   console.log(i);
 }
+
+// 함수 : 매개변수
+function gugudan(dan) {
+  for (let i = 1; i <= 9; i++) {
+    console.log(`${dan} x ${i} = ${dan * i}`);
+  }
+}
