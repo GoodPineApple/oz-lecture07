@@ -102,3 +102,8 @@ function sumEarlyReturn(num1, num2) {
 }
 const answer2 = sumEarlyReturn(10, 20); // 인수를 문자열 "10"으로 변경
 console.log("answer2", answer2);
+
+// 화살표함수 정의
+const sumArrow = (num1, num2) => num1 + num2;
+const answer3 = sumArrow(10, 20);
+console.log("answer3", answer3);
