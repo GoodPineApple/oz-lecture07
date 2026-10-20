@@ -72,4 +72,12 @@ function gugudan(dan) {
     console.log(`${dan} x ${i} = ${dan * i}`);
   }
 }
-gugudan(9);
+gugudan(9); // 2~9 숫자 바꿔보기
+
+// 매개변수 여러개 및 기본값
+function intoduce(name, age) {
+  console.log(`안녕하세요. ${name} (${age})`);
+}
+intoduce("홍길동", 20);
+intoduce("홍길동");
+intoduce("홍길동", 20, "서울시"); // age 이후 매개변수는 무시됨
