@@ -114,3 +114,11 @@ for (let i = 0; i < products.length; i++) {
   pdctTotal += item.price * item.stock;
 }
 console.log(`재고 금액 합계 ${pdctTotal}원`);
+
+// 객체 => JSON
+const json = JSON.stringify(products);
+console.log(json);
+
+// JSON => 객체
+const back = JSON.parse(json);
+console.log(back);
