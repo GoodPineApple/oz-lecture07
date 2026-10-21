@@ -11,6 +11,7 @@ console.log(`대기 ${waiting.length}명`);
 // 3. 맨 앞 손님이 입장합니다 — shift
 const first = waiting.shift();
 console.log(`${first}님 입장`);
+// console.log(`${waiting.shift()}님 입장`);
 
 // 4. 예약 손님은 맨 앞에 세웁니다 — unshift
 waiting.unshift("한예약");

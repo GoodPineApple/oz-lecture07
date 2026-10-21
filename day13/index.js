@@ -46,3 +46,15 @@ console.log(fruites);
 const removed = fruites.splice(1, 1, "딸기"); // 인수를 한개준경우, 두개준경우, 세개준경우 동작이 다름
 console.log(removed);
 console.log(fruites);
+
+// 객체 선언
+const bread = {
+  name: "팥붕어빵",
+  price: 1000,
+  ingredients: ["밀가루", "팥", "설탕"],
+  isHot: true,
+};
+console.log(bread);
+console.log("이름 :", bread.name);
+console.log("가격 :", bread.price);
+console.log("크기 :", bread.size);
