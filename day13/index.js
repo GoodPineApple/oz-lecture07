@@ -14,3 +14,13 @@ console.log(fruites);
 // 맨 뒤에 더할 때는 번호 대신
 fruites.push("포도");
 console.log(fruites);
+
+// length로 처음부터 끝까지 반복시키기
+const scores = [80, 95, 70, 55];
+let total = 0;
+for (let i = 0; i < scores.length; i++) {
+  const score = scores[i];
+  total += score;
+}
+console.log("총합", total);
+console.log("평균", total / scores.length);
