@@ -7,3 +7,10 @@ console.log(fruites[2]);
 console.log(fruites[fruites.length - 1]);
 console.log(fruites[5]);
 console.log(fruites.length);
+
+fruites[1] = "망고";
+console.log(fruites);
+
+// 맨 뒤에 더할 때는 번호 대신
+fruites.push("포도");
+console.log(fruites);
