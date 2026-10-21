@@ -41,3 +41,8 @@ console.log(fruites);
 const shifted = fruites.shift();
 console.log(shifted);
 console.log(fruites);
+
+// 배열 splice (지우기, 바꾸기, 끼워넣기)
+const removed = fruites.splice(1, 1, "딸기"); // 인수를 한개준경우, 두개준경우, 세개준경우 동작이 다름
+console.log(removed);
+console.log(fruites);
