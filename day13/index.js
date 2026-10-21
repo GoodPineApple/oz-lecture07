@@ -58,8 +58,25 @@ console.log(bread);
 console.log("이름 :", bread.name);
 console.log("가격 :", bread.price);
 console.log("크기 :", bread.size);
-console.log("따뜻한가요? :", bread["isHot"]);
+console.log("따뜻한가요? :", bread["isHot"]); // bread.isHot
 
 bread.price = 500;
 bread.owner = "김오즈";
 console.log(bread);
+
+const user = {
+  userName: "김오즈",
+  address: {
+    city: "서울",
+    zip: "04524",
+  },
+  likes: ["커피", "코딩"],
+  greet() {
+    return "안녕하세요";
+  },
+};
+console.log(user);
+console.log(user.address.city);
+console.log(user.likes[1]);
+console.log(user.likes.length);
+console.log(user.greet());
