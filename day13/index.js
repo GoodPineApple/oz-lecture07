@@ -105,3 +105,12 @@ const products = [
 console.log(products);
 console.log(products[0].pdctName);
 console.log(products[2].price);
+
+// 배열 for로 돌아보기
+let pdctTotal = 0;
+for (let i = 0; i < products.length; i++) {
+  const item = products[i];
+  console.log(`${item.pdctName} ${item.price}원`);
+  total += item.price * item.stock;
+}
+console.log(`재고 금액 합계 ${total}원`);
