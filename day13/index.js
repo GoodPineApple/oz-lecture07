@@ -58,3 +58,8 @@ console.log(bread);
 console.log("이름 :", bread.name);
 console.log("가격 :", bread.price);
 console.log("크기 :", bread.size);
+console.log("따뜻한가요? :", bread["isHot"]);
+
+bread.price = 500;
+bread.owner = "김오즈";
+console.log(bread);
