@@ -80,3 +80,25 @@ console.log(user.address.city);
 console.log(user.likes[1]);
 console.log(user.likes.length);
 console.log(user.greet());
+
+// 객체 배열
+const products = [
+  {
+    id: 1,
+    pdctName: "에코백",
+    price: 12000,
+    stock: 5,
+  },
+  {
+    id: 2,
+    pdctName: "텀블러",
+    price: 18000,
+    stock: 0,
+  },
+  {
+    id: 3,
+    pdctName: "머그컵",
+    price: 9000,
+    stock: 12,
+  },
+];
