@@ -24,3 +24,13 @@ for (let i = 0; i < scores.length; i++) {
 }
 console.log("총합", total);
 console.log("평균", total / scores.length);
+
+// 배열에 요소 넣기 빼기
+console.log(fruites);
+
+fruites.push("딸기"); // 배열 뒤에 추가
+console.log(fruites);
+
+const poped = fruites.pop(); // 배열 뒤에 빼기
+console.log(poped);
+console.log(fruites);
