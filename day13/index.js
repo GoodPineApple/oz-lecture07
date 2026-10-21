@@ -34,3 +34,10 @@ console.log(fruites);
 const poped = fruites.pop(); // 배열 뒤에 빼기
 console.log(poped);
 console.log(fruites);
+
+fruites.unshift("수박"); // 배열 앞에 추가
+console.log(fruites);
+
+const shifted = fruites.shift();
+console.log(shifted);
+console.log(fruites);
