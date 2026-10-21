@@ -102,3 +102,6 @@ const products = [
     stock: 12,
   },
 ];
+console.log(products);
+console.log(products[0].pdctName);
+console.log(products[2].price);
