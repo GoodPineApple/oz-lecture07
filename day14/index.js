@@ -113,3 +113,16 @@ console.log(found);
 
 const foundN = products.find((p) => p.id === 9);
 console.log(foundN);
+
+// some 하나라도 맞는가, every 모두 맞는가
+const isSome = products.some((p) => p.stock === 0);
+console.log("품절이 있나?", isSome);
+
+const isRightPrices = products.every((p) => p.price > 0);
+console.log("가격이 정상적으로 책정되었는가?", isRightPrices);
+
+const isExistStockAll = products.every((p) => p.stock > 0);
+console.log("모든 상품이 재고가 존재하는가?", isExistStockAll);
+
+const emptyArrEvery = [].every((n) => n > 0);
+console.log(emptyArrEvery);
