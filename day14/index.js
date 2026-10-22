@@ -86,3 +86,7 @@ const products = [
     stock: 12,
   },
 ];
+const pdctFiltered = products.filter((p) => p.stock > 0);
+const names = pdctFiltered.map((p) => p.name);
+console.log(pdctFiltered);
+console.log(names);
