@@ -126,3 +126,16 @@ console.log("모든 상품이 재고가 존재하는가?", isExistStockAll);
 
 const emptyArrEvery = [].every((n) => n > 0);
 console.log(emptyArrEvery);
+
+// map으로 새객체 배열 반환하기
+console.log(products);
+const productsSales = products.map((p) => {
+  return {
+    id: p.id,
+    pdctName: p.pdctName,
+    price: p.price * 0.9,
+    stock: p.stock,
+    originPrice: p.price,
+  };
+});
+console.log(productsSales);
