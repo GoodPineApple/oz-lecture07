@@ -61,3 +61,6 @@ console.log(todos);
 console.log(doneTodos);
 console.log(doneTodos.length);
 console.log((doneTodos.length / todos.length) * 100);
+
+const leftTodos = todos.filter((todo) => !todo.done);
+console.log(leftTodos);
