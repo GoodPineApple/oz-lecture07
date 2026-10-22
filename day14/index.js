@@ -93,3 +93,15 @@ console.log(names);
 
 const namesOnce = products.filter((p) => p.stock > 0).map((p) => p.pdctName);
 console.log(namesOnce);
+
+// reduce 전체 배열을 순회하여 하나의 값 만들기
+const numbersR = [1, 2, 3, 4];
+const sum = numbersR.reduce((acc, num) => acc + num, 0);
+console.log(sum);
+
+const cart = [
+  { name: "책", price: 10000 },
+  { name: "펜", price: 2000 },
+];
+const totalCart = cart.reduce((acc, item) => acc + item.price, 0);
+console.log(totalCart);
