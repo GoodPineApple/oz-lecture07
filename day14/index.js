@@ -4,3 +4,12 @@ const a = `이번에 새롭게 기획되어 추진 중에 있는 신규 프로�
 각 부서 간의 긴밀한 협력 체계의 구축을 진행하는 것이 무엇보다도 시급한 과제라고 판단되어집니다.`;
 
 const b = `새 프로젝트를 성공시키려면 부서 간 협력 체계를 서둘러 구축해야 합니다`;
+
+// foreach 값을 하나씩 꺼내 함수에 넣기
+const fruites = ["사과", "바나나", "오렌지"];
+fruites.forEach((fruit) => {
+  console.log(fruit);
+});
+fruites.forEach((fruit, i) => {
+  console.log(`${i}. ${fruit}`);
+});
