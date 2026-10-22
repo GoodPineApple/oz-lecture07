@@ -42,3 +42,11 @@ const users = [
 console.log(users.map((user) => user.name));
 const prices = [12000, 18000, 9000];
 console.log(prices.map((price) => price * 0.9));
+
+// filter 조건이 true인 값만 새 배열에 반환
+const numbersF = [1, 2, 3, 4, 5];
+const even = numbersF.filter((num) => num % 2 === 0);
+console.log(numbersF);
+console.log(even);
+const tenOver = numbersF.filter((num) => num > 10);
+console.log(tenOver);
