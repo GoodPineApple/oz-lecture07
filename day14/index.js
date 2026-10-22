@@ -13,3 +13,6 @@ fruites.forEach((fruit) => {
 fruites.forEach((fruit, i) => {
   console.log(`${i}. ${fruit}`);
 });
+fruites.forEach((item, index) => {
+  console.log(`${item}. ${index}`);
+});
