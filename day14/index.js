@@ -105,3 +105,11 @@ const cart = [
 ];
 const totalCart = cart.reduce((acc, item) => acc + item.price, 0);
 console.log(totalCart);
+
+// find  조건에 맞는 첫 값 하나 반환
+const found = products.find((p) => p.id === 2);
+console.log(products);
+console.log(found);
+
+const foundN = products.find((p) => p.id === 9);
+console.log(foundN);
