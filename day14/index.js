@@ -33,3 +33,12 @@ const numbers = [1, 2, 3];
 const doubled = numbers.map((num) => num * 2);
 console.log(numbers);
 console.log(doubled);
+
+const users = [
+  { name: "김오즈", age: 25 },
+  { name: "이코딩", age: 30 },
+  { name: "박자바", age: 20 },
+];
+console.log(users.map((user) => user.name));
+const prices = [12000, 18000, 9000];
+console.log(prices.map((price) => price * 0.9));
