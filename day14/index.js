@@ -90,3 +90,6 @@ const pdctFiltered = products.filter((p) => p.stock > 0);
 const names = pdctFiltered.map((p) => p.pdctName);
 console.log(pdctFiltered);
 console.log(names);
+
+const namesOnce = products.filter((p) => p.stock > 0).map((p) => p.pdctName);
+console.log(namesOnce);
