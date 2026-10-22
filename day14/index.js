@@ -64,3 +64,25 @@ console.log((doneTodos.length / todos.length) * 100);
 
 const leftTodos = todos.filter((todo) => !todo.done);
 console.log(leftTodos);
+
+// filter + map 고른 다음에 바꾸기
+const products = [
+  {
+    id: 1,
+    pdctName: "에코백",
+    price: 12000,
+    stock: 5,
+  },
+  {
+    id: 2,
+    pdctName: "텀블러",
+    price: 18000,
+    stock: 0,
+  },
+  {
+    id: 3,
+    pdctName: "머그컵",
+    price: 9000,
+    stock: 12,
+  },
+];
