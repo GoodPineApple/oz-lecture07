@@ -50,3 +50,14 @@ console.log(numbersF);
 console.log(even);
 const tenOver = numbersF.filter((num) => num > 10);
 console.log(tenOver);
+
+const todos = [
+  { title: "장보기", done: true },
+  { title: "운동하기", done: false },
+  { title: "과제제출", done: true },
+];
+const doneTodos = todos.filter((todo) => todo.done);
+console.log(todos);
+console.log(doneTodos);
+console.log(doneTodos.length);
+console.log((doneTodos.length / todos.length) * 100);
