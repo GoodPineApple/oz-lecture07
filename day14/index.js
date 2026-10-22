@@ -139,3 +139,12 @@ const productsSales = products.map((p) => {
   };
 });
 console.log(productsSales);
+
+const productsSales2 = products.map((p) => {
+  return {
+    ...p,
+    price: p.price * 0.9,
+    originPrice: p.price,
+  };
+});
+console.log(productsSales2);
