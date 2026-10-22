@@ -27,3 +27,9 @@ scores.forEach((score) => {
 console.log(total);
 const result = scores.forEach((score) => score * 2);
 console.log(result);
+
+// map 하나하나 바꾼 새 배열을 반환
+const numbers = [1, 2, 3];
+const doubled = numbers.map((num) => num * 2);
+console.log(numbers);
+console.log(doubled);
