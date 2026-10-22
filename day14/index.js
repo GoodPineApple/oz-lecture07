@@ -14,5 +14,16 @@ fruites.forEach((fruit, i) => {
   console.log(`${i}. ${fruit}`);
 });
 fruites.forEach((item, index) => {
+  // 매개변수의 순서가 중요
   console.log(`${item}. ${index}`);
 });
+
+// foreach는 반환값 없음
+const scores = [80, 95, 70, 55];
+let total = 0;
+scores.forEach((score) => {
+  total += score;
+});
+console.log(total);
+const result = scores.forEach((score) => score * 2);
+console.log(result);
