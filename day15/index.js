@@ -62,3 +62,13 @@ console.log(newEl);
 menuEl.appendChild(newEl); // 3. 붙이기
 
 console.log(document.querySelectorAll(".menu li").length);
+
+// JS로 화면 채우기
+const breads = ["소금빵", "크루아상", "바게뜨", "단팥빵"];
+const breadListEl = document.querySelector(".bread-list");
+
+breads.forEach((b) => {
+  const itemEl = document.createElement("li");
+  itemEl.textContent = b;
+  breadListEl.appendChild(itemEl);
+});
