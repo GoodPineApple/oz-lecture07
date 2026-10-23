@@ -73,21 +73,42 @@ breads.forEach((b) => {
   breadListEl.appendChild(itemEl);
 });
 
-const product = {
-  id: 1,
-  name: "에코백",
-  price: 12000,
-  stock: 5,
-};
+// const product = {
+//   id: 1,
+//   name: "에코백",
+//   price: 12000,
+//   stock: 5,
+// };
+// const listEl = document.querySelector("#card-list");
+
+// const cardEl = document.createElement("article");
+// cardEl.classList.add("card");
+// const nameEl = document.createElement("h3");
+// nameEl.textContent = product.name;
+// const priceEl = document.createElement("p");
+// priceEl.textContent = `${product.price}원`;
+
+// cardEl.appendChild(nameEl);
+// cardEl.appendChild(priceEl);
+// listEl.appendChild(cardEl);
+
+const products = [
+  { id: 1, name: "에코백", price: 12000, stock: 5 },
+  { id: 2, name: "텀블러", price: 18000, stock: 0 },
+  { id: 3, name: "머그컵", price: 9000, stock: 12 },
+  { id: 4, name: "키링", price: 5000, stock: 30 },
+];
+
 const listEl = document.querySelector("#card-list");
+products.forEach((product) => {
+  const cardEl = document.createElement("article");
+  cardEl.classList.add("card");
+  const nameEl = document.createElement("h3");
+  nameEl.textContent = product.name;
+  const priceEl = document.createElement("p");
+  priceEl.textContent = `${product.price}원`;
 
-const cardEl = document.createElement("article");
-cardEl.classList.add("card");
-const nameEl = document.createElement("h3");
-nameEl.textContent = product.name;
-const priceEl = document.createElement("p");
-priceEl.textContent = `${product.price}원`;
-
-cardEl.appendChild(nameEl);
-cardEl.appendChild(priceEl);
-listEl.appendChild(cardEl);
+  cardEl.appendChild(nameEl);
+  cardEl.appendChild(priceEl);
+  listEl.appendChild(cardEl);
+});
