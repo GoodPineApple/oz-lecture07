@@ -37,3 +37,10 @@ const titleStyleEl = document.querySelector("#title");
 titleStyleEl.style.color = "#ffffff";
 titleStyleEl.style.backgroundColor = "blue";
 titleStyleEl.style.padding = "8px 16px";
+
+// classList 미리 만든 class 붙이기 때기
+const statusEl2 = document.querySelector(".status");
+statusEl2.classList.add("open");
+console.log(statusEl2.classList.contains("open")); // 포함하고 있나?
+console.log(statusEl2.classList.toggle("open")); // 있으면 삭제, 없으면 추가
+console.log(statusEl2.classList.toggle("open"));
