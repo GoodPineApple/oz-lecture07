@@ -44,3 +44,10 @@ statusEl2.classList.add("open");
 console.log(statusEl2.classList.contains("open")); // 포함하고 있나?
 console.log(statusEl2.classList.toggle("open")); // 있으면 삭제, 없으면 추가
 console.log(statusEl2.classList.toggle("open"));
+
+// getAttribute, setAttribute 속성 읽기, 속성 수정
+const signEl = document.querySelector("#sign");
+console.log(signEl.getAttribute("src"));
+signEl.setAttribute("src", "open.svg");
+signEl.setAttribute("alt", "영업 중");
+console.log(signEl.getAttribute("src"));
