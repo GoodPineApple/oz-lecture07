@@ -118,3 +118,15 @@ const menuElForRemove = document.querySelector(".menu");
 const soldOutEl = document.querySelector(".menu .sold-out");
 const removed = menuElForRemove.removeChild(soldOutEl);
 console.log(removed);
+
+// addEventListener 버튼에 이벤트 등록하기 (클릭)
+const menuElForAdd = document.querySelector(".menu");
+const addBtn = document.querySelector("#add-btn");
+
+let count = 0;
+addBtn.addEventListener("click", () => {
+  count += 1;
+  const itemEl = document.createElement("li");
+  itemEl.textContent = `새 메뉴 ${count}`;
+  menuElForAdd.appendChild(itemEl);
+});
