@@ -26,3 +26,14 @@ const statusEl = document.querySelector(".status");
 console.log(statusEl.textContent);
 statusEl.textContent = "영업 중";
 console.log(statusEl.textContent);
+
+// innerHTML HTML
+const message = "<strong>소금빵</strong>이 나왔습니다";
+document.querySelector("#text-msg").textContent = message;
+document.querySelector("#html-msg").innerHTML = message;
+
+// style CSS속성을 하나씩 바꾸기
+const titleStyleEl = document.querySelector("#title");
+titleStyleEl.style.color = "#ffffff";
+titleStyleEl.style.backgroundColor = "blue";
+titleStyleEl.style.padding = "8px 16px";
