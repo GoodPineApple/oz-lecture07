@@ -20,3 +20,9 @@ const menuEls = document.querySelectorAll(".menu li");
 console.log(menuEls);
 const newEls = document.querySelectorAll(".new");
 console.log(newEls);
+
+// textContent 글자
+const statusEl = document.querySelector(".status");
+console.log(statusEl.textContent);
+statusEl.textContent = "영업 중";
+console.log(statusEl.textContent);
