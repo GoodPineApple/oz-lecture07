@@ -14,3 +14,9 @@ const descQ = document.querySelector(".desc");
 console.log(descQ);
 const newQ = document.querySelector(".new");
 console.log(newQ);
+
+// querySelectorAll 맞는 요소 모두 찾기
+const menuEls = document.querySelectorAll(".menu li");
+console.log(menuEls);
+const newEls = document.querySelectorAll(".new");
+console.log(newEls);
