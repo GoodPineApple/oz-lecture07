@@ -112,3 +112,9 @@ products.forEach((product) => {
   cardEl.appendChild(priceEl);
   listEl.appendChild(cardEl);
 });
+
+// removeChild 요소 삭제
+const menuElForRemove = document.querySelector(".menu");
+const soldOutEl = document.querySelector(".menu .sold-out");
+const removed = menuElForRemove.removeChild(soldOutEl);
+console.log(removed);
