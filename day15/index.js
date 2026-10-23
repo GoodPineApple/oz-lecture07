@@ -51,3 +51,14 @@ console.log(signEl.getAttribute("src"));
 signEl.setAttribute("src", "open.svg");
 signEl.setAttribute("alt", "영업 중");
 console.log(signEl.getAttribute("src"));
+
+// createElement, appendChild 요소 생성, 자식으로 붙이기
+const menuEl = document.querySelector(".menu");
+console.log(document.querySelectorAll(".menu li").length);
+
+const newEl = document.createElement("li"); // 1. 만들기
+newEl.textContent = "단팥빵"; // 2. 채우기
+console.log(newEl);
+menuEl.appendChild(newEl); // 3. 붙이기
+
+console.log(document.querySelectorAll(".menu li").length);
