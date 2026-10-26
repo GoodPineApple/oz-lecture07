@@ -88,4 +88,13 @@ whereEl.textContent = `지금 주소 끝 : ${location.search || "(없음)"}`;
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log("제출합니다");
+
+  // 입력칸의 value 가져오기
+  const ageInput = document.querySelector("#age");
+  console.log("나이", ageInput.value);
+
+  // trim() 앞뒤 뛰어쓰기 지우기
+  const todoInput = document.querySelector("#todo-input");
+  console.log("할일", todoInput.value);
+  console.log("할일", todoInput.value.trim());
 });
