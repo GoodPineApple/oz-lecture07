@@ -70,3 +70,12 @@ sizeSelect.addEventListener("change", (e) => {
   console.log("change", e.target.value);
   showOrder();
 });
+
+// keyup 키를 땔 때, 어떤 키인지 event.key
+const memoInput = document.querySelector("#memo");
+memoInput.addEventListener("keyup", (e) => {
+  console.log(e.key);
+  if (e.key === "Enter") {
+    console.log("Enter키 입력");
+  }
+});
