@@ -79,3 +79,8 @@ memoInput.addEventListener("keyup", (e) => {
     console.log("Enter키 입력");
   }
 });
+
+// submit 제출할 때, 그대로 두면 새페이지 열림
+const form = document.querySelector("#todo-form");
+const whereEl = document.querySelector("#where");
+whereEl.textContent = `지금 주소 끝 : ${location.search || "(없음)"}`;
