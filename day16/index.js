@@ -98,6 +98,14 @@ form.addEventListener("submit", (e) => {
   console.log("할일", todoInput.value);
   console.log("할일", todoInput.value.trim());
 
+  // validation 유효성검사
   const msgEl = document.querySelector("#msg");
+  const text = todoInput.value.trim();
+  if (text === "") {
+    msgEl.textContent = "할 일을 입력해 주세요";
+    msgEl.classList.add("error");
+    return;
+  }
   msgEl.textContent = todoInput.value;
+  msgEl.classList.remove("error");
 });
