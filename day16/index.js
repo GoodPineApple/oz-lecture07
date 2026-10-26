@@ -65,3 +65,8 @@ shotBox.addEventListener("change", (e) => {
   console.log("change", e.target.checked);
   showOrder();
 });
+
+sizeSelect.addEventListener("change", (e) => {
+  console.log("change", e.target.value);
+  showOrder();
+});
