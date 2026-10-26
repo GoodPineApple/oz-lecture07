@@ -84,3 +84,8 @@ memoInput.addEventListener("keyup", (e) => {
 const form = document.querySelector("#todo-form");
 const whereEl = document.querySelector("#where");
 whereEl.textContent = `지금 주소 끝 : ${location.search || "(없음)"}`;
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log("제출합니다");
+});
