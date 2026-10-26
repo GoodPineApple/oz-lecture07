@@ -32,3 +32,14 @@ menuBtns.forEach((btn) => {
     pickedEl.textContent = `고른 메뉴 : ${btn.textContent}`;
   });
 });
+
+// input 이벤트는 한 글자마다, change 이벤트는 칸을 벗어날 때.
+const nameInput = document.querySelector("#name");
+
+nameInput.addEventListener("input", (e) => {
+  console.log("input", e.target.value);
+});
+
+nameInput.addEventListener("change", (e) => {
+  console.log("change", e.target.value);
+});
