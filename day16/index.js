@@ -22,3 +22,13 @@ btn.onclick = () => console.log("둘째 - onclick");
 
 btn.addEventListener("click", () => console.log("셋째 - addEventListener"));
 btn.addEventListener("click", () => console.log("넷째 - addEventListener"));
+
+// forEach로 버튼에 이벤트 연결
+const menuBtns = document.querySelectorAll(".menu-btn");
+const pickedEl = document.querySelector("#picked");
+
+menuBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    pickedEl.textContent = `고른 메뉴 : ${btn.textContent}`;
+  });
+});
