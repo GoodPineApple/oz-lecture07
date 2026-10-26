@@ -43,3 +43,9 @@ nameInput.addEventListener("input", (e) => {
 nameInput.addEventListener("change", (e) => {
   console.log("change", e.target.value);
 });
+
+btn.addEventListener("click", (event) => {
+  console.log(event);
+  console.log(event.type);
+  console.log(event.target);
+});
