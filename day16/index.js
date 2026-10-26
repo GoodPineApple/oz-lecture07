@@ -49,3 +49,19 @@ btn.addEventListener("click", (event) => {
   console.log(event.type);
   console.log(event.target);
 });
+
+// select는 value, checkbox는 checked
+const orderEl = document.querySelector("#order");
+const sizeSelect = document.querySelector("#size");
+const shotBox = document.querySelector("#shot");
+
+function showOrder() {
+  const shot = shotBox.checked ? "샷 추가" : "샷 추가 없음";
+  console.log(shot);
+  orderEl.textContent = `${sizeSelect.value} . ${shot}`;
+}
+
+shotBox.addEventListener("change", (e) => {
+  console.log("change", e.target.checked);
+  showOrder();
+});
