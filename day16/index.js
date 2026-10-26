@@ -7,8 +7,18 @@ const countEl = document.querySelector("#count");
 let count = 0;
 
 function addOne() {
+  console.log("addOne 실행");
   count += 1;
   countEl.textContent = `${count}번 눌렀습니다`;
 }
 
 countBtn.addEventListener("click", addOne);
+
+// onclick은 하나만, addEventLister는 여러개
+const btn = document.querySelector("#btn");
+
+btn.onclick = () => console.log("첫째 - onclick");
+btn.onclick = () => console.log("둘째 - onclick");
+
+btn.addEventListener("click", () => console.log("셋째 - addEventListener"));
+btn.addEventListener("click", () => console.log("넷째 - addEventListener"));
