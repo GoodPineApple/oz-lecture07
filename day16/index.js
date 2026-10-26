@@ -97,4 +97,7 @@ form.addEventListener("submit", (e) => {
   const todoInput = document.querySelector("#todo-input");
   console.log("할일", todoInput.value);
   console.log("할일", todoInput.value.trim());
+
+  const msgEl = document.querySelector("#msg");
+  msgEl.textContent = todoInput.value;
 });
