@@ -78,11 +78,15 @@ makeCoffee();
 
 // try catch 오류 처리
 async function fetchWithError() {
-  console.log("데이터 패치 시작");
-  await new Promise((resolve, reject) => {
-    setTimeout(() => reject("에러 발생"), 1000);
-  });
-  console.log("데이터 패치 종료");
+  try {
+    console.log("데이터 패치 시작");
+    await new Promise((resolve, reject) => {
+      setTimeout(() => reject("에러 발생"), 1000);
+    });
+    console.log("데이터 패치 종료");
+  } catch (err) {
+    console.log("에러 : ", err);
+  }
 }
 
 fetchWithError();
