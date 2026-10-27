@@ -23,3 +23,14 @@ cancelBtn.addEventListener("click", () => {
   clearTimeout(timeoutId);
   msgEl.textContent = "알림을 취소했습니다";
 });
+
+// setInterval - 정해진 시간마다 되풀이
+let count = 0;
+const intervalId = setInterval(() => {
+  count += 1;
+  console.log(`${count}초`);
+  if (count == 5) {
+    clearInterval(intervalId);
+    console.log("멈춤");
+  }
+}, 1000);
