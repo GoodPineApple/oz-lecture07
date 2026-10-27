@@ -42,3 +42,13 @@ function sayHello(name, callback) {
 }
 
 sayHello("태민", () => console.log("콜백 실행"));
+
+// Promise
+const order = new Promise((resolve, reject) => {
+  setTimeout(() => resolve("아메리카노가 나왔습니다"), 2000);
+});
+console.log(order);
+order.then((message) => {
+  console.log(message);
+  console.log(order);
+});
