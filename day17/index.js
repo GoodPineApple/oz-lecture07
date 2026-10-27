@@ -5,3 +5,21 @@ console.log("index.js가 연결됐습니다!!!");
 console.log("이미지 로딩 시작");
 setTimeout(() => console.log("이미지 로딩 완료"), 2000);
 console.log("다른 작업 수행");
+
+// clearTimeout(timerId) timer 취소
+const setBtn = document.querySelector("#set-btn");
+const cancelBtn = document.querySelector("#cancel-btn");
+const msgEl = document.querySelector("#msg");
+let timeoutId = null;
+
+setBtn.addEventListener("click", () => {
+  msgEl.textContent = "3초 뒤에 알려 드립니다";
+  timeoutId = setTimeout(() => {
+    msgEl.textContent = "3초가 지났습니다";
+  }, 3000);
+});
+
+cancelBtn.addEventListener("click", () => {
+  clearTimeout(timeoutId);
+  msgEl.textContent = "알림을 취소했습니다";
+});
