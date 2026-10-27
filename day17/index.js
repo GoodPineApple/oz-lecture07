@@ -43,18 +43,35 @@
 
 // sayHello("태민", () => console.log("콜백 실행"));
 
-// Promise
-const order = new Promise((resolve, reject) => {
-  //   setTimeout(() => resolve("아메리카노가 나왔습니다"), 2000);
-  setTimeout(() => reject("재고가 없습니다"), 2000);
-});
-console.log(order);
-order
-  .then((message) => {
-    console.log(message);
-    console.log(order);
-  })
-  .catch((error) => {
-    console.log(error);
-    console.log(order);
+// // Promise
+// const order = new Promise((resolve, reject) => {
+//   //   setTimeout(() => resolve("아메리카노가 나왔습니다"), 2000);
+//   setTimeout(() => reject("재고가 없습니다"), 2000);
+// });
+// console.log(order);
+// order
+//   .then((message) => {
+//     console.log(message);
+//     console.log(order);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//     console.log(order);
+//   });
+
+// async await : Promise가 끝나야 다음줄 실행
+function wait(ms) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
   });
+}
+
+async function makeCoffee() {
+  console.log("주문");
+  await wait(1000);
+  console.log("1초 - 원두 갈기");
+  await wait(1000);
+  console.log("2초 - 커피 완성");
+}
+
+makeCoffee();
