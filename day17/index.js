@@ -34,3 +34,11 @@ const intervalId = setInterval(() => {
     console.log("멈춤");
   }
 }, 1000);
+
+// 콜백함수
+function sayHello(name, callback) {
+  console.log(`안녕 ${name}`);
+  callback();
+}
+
+sayHello("태민", () => console.log("콜백 실행"));
