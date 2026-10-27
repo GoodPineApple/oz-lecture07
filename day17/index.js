@@ -83,9 +83,10 @@ async function fetchWithError() {
     await new Promise((resolve, reject) => {
       setTimeout(() => reject("에러 발생"), 1000);
     });
-    console.log("데이터 패치 종료");
   } catch (err) {
     console.log("에러 : ", err);
+  } finally {
+    console.log("데이터 패치 종료");
   }
 }
 
