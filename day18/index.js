@@ -30,3 +30,21 @@ async function load() {
   console.log(firstUser.name);
 }
 load();
+
+// response.status response.ok
+
+async function check(path) {
+  const response = await fetch(`https://jsonplaceholder.typicode.com/${path}`);
+  console.log(path, response.status, response.ok);
+}
+
+async function main() {
+  console.log("메인시작");
+  await check("users");
+  await check("users/1");
+  await check("todos");
+  await check("usersssssssss");
+  console.log("메인끝");
+}
+
+main();
