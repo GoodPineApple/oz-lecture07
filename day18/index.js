@@ -19,3 +19,10 @@ const userParsed = JSON.parse(text);
 console.log(userParsed);
 console.log(typeof userParsed);
 console.log(userParsed.tags[0]);
+
+async function load() {
+  const response = await fetch(`https://jsonplaceholder.typicode.com/users`);
+  const users = await response.json();
+  console.log(users);
+}
+load();
