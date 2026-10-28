@@ -24,5 +24,9 @@ async function load() {
   const response = await fetch(`https://jsonplaceholder.typicode.com/users`);
   const users = await response.json();
   console.log(users);
+  const firstUser = users[0];
+  console.log(firstUser);
+  console.log(firstUser.id);
+  console.log(firstUser.name);
 }
 load();
