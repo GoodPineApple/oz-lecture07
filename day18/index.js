@@ -13,3 +13,9 @@ const text = JSON.stringify(user);
 console.log(text);
 console.log(typeof text);
 console.log(JSON.stringify(user, null, 2));
+
+// JSON.parse JSON 문자를 값으로 바꾸기
+const userParsed = JSON.parse(text);
+console.log(userParsed);
+console.log(typeof userParsed);
+console.log(userParsed.tags[0]);
