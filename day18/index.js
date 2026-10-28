@@ -34,8 +34,17 @@ load();
 // response.status response.ok
 
 async function check(path) {
-  const response = await fetch(`https://jsonplaceholder.typicode.com/${path}`);
-  console.log(path, response.status, response.ok);
+  try {
+    const response = await fetch(
+      `https://jsonplaceholder.typicode.com/${path}`,
+    );
+    console.log(path, response.status, response.ok);
+    if (!response.ok) throw new Error("요청 실패");
+    const result = await response.json();
+    return result;
+  } catch (err) {
+    console.error(err);
+  }
 }
 
 async function main() {
