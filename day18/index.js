@@ -12,3 +12,4 @@ const user = {
 const text = JSON.stringify(user);
 console.log(text);
 console.log(typeof text);
+console.log(JSON.stringify(user, null, 2));
