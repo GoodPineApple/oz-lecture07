@@ -49,7 +49,8 @@ async function check(path) {
 
 async function main() {
   console.log("메인시작");
-  await check("users");
+  const users = await check("users");
+  console.log(users);
   await check("users/1");
   await check("todos");
   await check("usersssssssss");
