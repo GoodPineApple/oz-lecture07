@@ -13,7 +13,7 @@ function createMember(user) {
 
 // 2. 받은 회원 배열을 화면에 그리기
 function render(users) {
-  listEl.textContent = "";   // 앞서 그린 목록 비우기
+  listEl.textContent = ""; // 앞서 그린 목록 비우기
   users.forEach((user) => {
     listEl.appendChild(createMember(user));
   });
@@ -24,7 +24,7 @@ function render(users) {
 async function loadMembers() {
   statusEl.textContent = "불러오는 중…";
   statusEl.classList.remove("error");
-  loadBtn.disabled = true;   // 받는 동안 다시 누르지 못하게
+  loadBtn.disabled = true; // 받는 동안 다시 누르지 못하게
   try {
     const response = await fetch(API_URL);
     if (!response.ok) {
