@@ -54,3 +54,16 @@ const timer = {
   },
 };
 timer.start();
+
+// this의 쓰임 : 이벤트 리스너의 this
+const likeBtn = document.querySelector("#like-btn");
+
+likeBtn.addEventListener("click", function () {
+  this.textContent = "눌렀어요";
+  console.log("function :", this);
+});
+
+likeBtn.addEventListener("click", () => {
+  console.log(this);
+  console.log("화살표 :", this === window);
+});
