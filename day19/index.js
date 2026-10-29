@@ -85,3 +85,18 @@ console.log(day.getMonth() + 1); // 월 0부터 시작
 console.log(day.getDate()); // 일
 console.log(day.getDay()); // 요일 [0,1,2,3,4,5,6] 일,월,화...토
 console.log(day.getHours()); // 시간
+
+// Higer Order Function 고차함수
+// const addFunction = (a) => {
+//   let first = a;
+//   return (b) => {
+//     let second = b;
+//     return a + b;
+//   };
+// };
+
+const add = (a) => (b) => a + b;
+const add5 = add(5);
+
+console.log(add5);
+console.log(add5(10));
