@@ -45,9 +45,11 @@ const timer = {
   start() {
     setTimeout(function () {
       console.log("function :", this.secondes);
+      console.log(this);
     }, 0);
     setTimeout(() => {
       console.log("화살표 :", this.secondes);
+      console.log(this);
     }, 0);
   },
 };
