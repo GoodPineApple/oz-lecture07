@@ -67,3 +67,20 @@ likeBtn.addEventListener("click", () => {
   console.log(this);
   console.log("화살표 :", this === window);
 });
+
+// 기본객체 Math
+console.log(Math.round(4.5)); // 반올림
+console.log(Math.floor(4.7)); // 내림
+console.log(Math.ceil(4.2)); // 올림
+console.log(Math.max(72, 95, 58)); // 가장 큰 수
+console.log(Math.min(72, 95, 58)); // 가장 작은 수
+console.log(Math.abs(-3)); // 절댓값
+console.log(Math.PI);
+
+// 기본객체 Date
+const day = new Date();
+console.log(day.getFullYear()); // 연도
+console.log(day.getMonth()); // 월
+console.log(day.getDate()); // 일
+console.log(day.getDay()); // 요일
+console.log(day.getHours());
