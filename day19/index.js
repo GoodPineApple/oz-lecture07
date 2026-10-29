@@ -109,3 +109,19 @@ function makeMultiple(n) {
 const double = makeMultiple(2);
 const triple = makeMultiple(3);
 console.log(double(4), triple(4));
+
+// for와 메서드 이어쓰기
+const scores = [72, 95, 58, 88, 64];
+
+// 반복문 - 어떻게 할지를 한단계씩
+let total = 0;
+for (let i = 0; i < scores.length; i++) {
+  const score = scores[i];
+  if (score >= 60) total += score;
+}
+console.log("for :", total);
+
+const total2 = scores
+  .filter((score) => score >= 60)
+  .reduce((acc, score) => acc + score, 0);
+console.log("method :", total2);
