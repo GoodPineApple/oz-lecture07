@@ -38,3 +38,17 @@ const increaseC = makeIncrease();
 console.log(increaseC());
 console.log(increaseC());
 console.log(increaseC());
+
+// this의 쓰임 : function과 arrow function
+const timer = {
+  secondes: 3,
+  start() {
+    setTimeout(function () {
+      console.log("function :", this.secondes);
+    }, 0);
+    setTimeout(() => {
+      console.log("화살표 :", this.secondes);
+    }, 0);
+  },
+};
+timer.start();
