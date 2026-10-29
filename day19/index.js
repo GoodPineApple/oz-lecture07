@@ -121,6 +121,7 @@ for (let i = 0; i < scores.length; i++) {
 }
 console.log("for :", total);
 
+// method 이어쓰기 - 무엇을 할지를 차례로
 const total2 = scores
   .filter((score) => score >= 60)
   .reduce((acc, score) => acc + score, 0);
