@@ -7,8 +7,8 @@ const statusEl = document.querySelector("#status");
 const countEl = document.querySelector("#count");
 const listEl = document.querySelector("#todo-list");
 
-let todos = [];        // 받아 온 할 일 (DAY 13 배열)
-let view = "all";      // 지금 보기 : "all" · "done" · "left"
+let todos = []; // 받아 온 할 일 (DAY 13 배열)
+let view = "all"; // 지금 보기 : "all" · "done" · "left"
 
 // 1. 지금 보기에 맞는 할 일만 고르기 (DAY 14 filter)
 function getVisible() {
@@ -41,7 +41,9 @@ async function loadTodos(userId) {
   statusEl.textContent = "불러오는 중…";
   statusEl.classList.remove("error");
   try {
-    const response = await fetch(`https://jsonplaceholder.typicode.com/todos?userId=${userId}`);
+    const response = await fetch(
+      `https://jsonplaceholder.typicode.com/todos?userId=${userId}`,
+    );
     if (!response.ok) {
       throw new Error(`${response.status} 오류`);
     }
@@ -52,7 +54,7 @@ async function loadTodos(userId) {
     statusEl.textContent = `불러오지 못했습니다 — ${error.message}`;
     statusEl.classList.add("error");
   } finally {
-    render();   // 성공해도 실패해도 화면은 지금 todos로 다시 그림
+    render(); // 성공해도 실패해도 화면은 지금 todos로 다시 그림
   }
 }
 
