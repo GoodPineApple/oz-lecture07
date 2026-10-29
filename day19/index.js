@@ -100,3 +100,12 @@ const add5 = add(5);
 
 console.log(add5);
 console.log(add5(10));
+
+function makeMultiple(n) {
+  return function (x) {
+    return x * n;
+  };
+}
+const double = makeMultiple(2);
+const triple = makeMultiple(3);
+console.log(double(4), triple(4));
