@@ -15,7 +15,7 @@ function outer() {
 const innerFunc = outer();
 innerFunc();
 
-// 카운터
+// 카운터 : 누구나 바꾸는 전역변수
 let num = 0;
 
 const increase = function () {
@@ -24,5 +24,17 @@ const increase = function () {
 
 console.log(increase());
 console.log(increase());
-num = 100;
+num = 100; // 의도하지 않은 전연변수 변경
 console.log(increase());
+
+// 카운터 : 클로저로 숨기고 기억하기
+function makeIncrease() {
+  let num = 0;
+  return function () {
+    return ++num;
+  };
+}
+const increaseC = makeIncrease();
+console.log(increaseC());
+console.log(increaseC());
+console.log(increaseC());
