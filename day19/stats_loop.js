@@ -47,7 +47,8 @@ for (let i = 0; i < records.length; i++) {
 // 6. 화면에 쓰기 (두 파일이 같습니다)
 document.querySelector("#total").textContent = `${total}분`;
 document.querySelector("#average").textContent = `${average}분`;
-document.querySelector("#best").textContent = `${best.day}요일 ${best.type} ${best.minutes}분`;
+document.querySelector("#best").textContent =
+  `${best.day}요일 ${best.type} ${best.minutes}분`;
 
 const longDaysEl = document.querySelector("#long-days");
 longDays.forEach((day) => {
