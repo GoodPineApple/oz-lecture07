@@ -17,3 +17,6 @@ console.log("main.js");
 import printer from "./printer.js";
 
 printer.print(printer.title);
+
+const count = 3;
+console.log(printer.title, count);
