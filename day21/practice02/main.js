@@ -1,6 +1,12 @@
 // 실습 02 — 연결 : 할 일 배열을 바꾸고, 저장하고, 다시 그립니다
 
-import { loadTodos, saveTodos, loadDraft, saveDraft, clearDraft } from "./storage.js";
+import {
+  loadTodos,
+  saveTodos,
+  loadDraft,
+  saveDraft,
+  clearDraft,
+} from "./storage.js";
 import { formatDate } from "./date.js";
 
 const form = document.querySelector("#todo-form");
@@ -20,6 +26,7 @@ function render() {
     if (todo.done) {
       itemEl.classList.add("done");
     }
+
     const textEl = document.createElement("span");
     textEl.textContent = todo.text;
     textEl.addEventListener("click", () => toggleTodo(todo.id));
